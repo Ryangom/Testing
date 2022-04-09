@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+/* Feedback systme start */
+#feedback_section{
+    width: 100%;
+    margin: 2em 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#feedback_section .container{
+    gap: 2em;
+}
+.feedbacks{
+    width: 55%;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.feedbacks h1{
+    text-transform: uppercase;
+}
+.feedbacks h1::after{
+    content: '';
+    margin-top: 1em;
+    width: 100px;
+    height: 5px;
+    display: block;
+    background-color: rgba(248, 4, 4, 0.577);
+}
+.feedback_user_comment p{
+    line-height: 20px;
+    margin-top: 5px;
+}
+.comment_form{
+    width: 45%;
+}
+.feedback{
+    margin: 2em 0;
+    gap: 2em;
+}
+
+.feedback .feedback_user_img img{
+    width: 100px;
+    height: 100px ;
+}
+
+
+.comment_form form{
+    width: 100%;
+    padding: 1em;
+}
+.comment_form form input, .comment_form form textarea{
+    width: 100%;
+    font-size: 1em;
+    padding: 0.4em ;
+}
+.input_row{
+    gap: 1em;
+}
+.comment_form form textarea{
+    margin-top: 1em;
+    font-size: 1em;
+    padding: 0.4em ;
+}
+.btn{
+    color: white;
+    padding: 1em 1.5em;
+    background-color: rgb(173, 114, 4);
+    border: none;
+    font-size: 1em;
+    margin: 1em 0;
+}
+/* Feedback systme end */
